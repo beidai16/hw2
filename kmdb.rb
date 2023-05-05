@@ -104,19 +104,19 @@ new_movie["year_released"] = 2005
 new_movie["MPAA_rating"] = "PG-13"
 new_movie.save
 
-new_movie2 = Movie.new
-new_movie2["studio_id"] = warnerbros["id"]
-new_movie2["movie_title"] = "The Dark Knight"
-new_movie2["year_released"] = 2008
-new_movie2["MPAA_rating"] = "PG-13"
-new_movie2.save
+new_movie = Movie.new
+new_movie["studio_id"] = warnerbros["id"]
+new_movie["movie_title"] = "The Dark Knight"
+new_movie["year_released"] = 2008
+new_movie["MPAA_rating"] = "PG-13"
+new_movie.save
 
-new_movie3 = Movie.new
-new_movie3["studio_id"] = warnerbros["id"]
-new_movie3["movie_title"] = "The Dark Knight Rises"
-new_movie3["year_released"] = 2012
-new_movie3["MPAA_rating"] = "PG-13"
-new_movie3.save
+new_movie = Movie.new
+new_movie["studio_id"] = warnerbros["id"]
+new_movie["movie_title"] = "The Dark Knight Rises"
+new_movie["year_released"] = 2012
+new_movie["MPAA_rating"] = "PG-13"
+new_movie.save
 
 #Insert Actor data
 new_actor = Actor.new
@@ -187,92 +187,89 @@ new_character["movie_id"] = batmanbegins["id"]
 new_character["actor_id"] = bale["id"]
 new_character.save
 
-new_character2 = Character.new
-new_character2["character_name"] = "Alfred"
-new_character2["movie_id"] = batmanbegins["id"]
-new_character2["actor_id"] = caine["id"]
-new_character2.save
+new_character = Character.new
+new_character["character_name"] = "Alfred"
+new_character["movie_id"] = batmanbegins["id"]
+new_character["actor_id"] = caine["id"]
+new_character.save
 
-new_character3 = Character.new
-new_character3["character_name"] = "Ra's Al Ghul"
-new_character3["movie_id"] = batmanbegins["id"]
-new_character3["actor_id"] = neeson["id"]
-new_character3.save
+new_character = Character.new
+new_character["character_name"] = "Ra's Al Ghul"
+new_character["movie_id"] = batmanbegins["id"]
+new_character["actor_id"] = neeson["id"]
+new_character.save
 
-new_character4 = Character.new
-new_character4["character_name"] = "Rachel Dawes"
-new_character4["movie_id"] = batmanbegins["id"]
-new_character4["actor_id"] = holmes["id"]
-new_character4.save
+new_character = Character.new
+new_character["character_name"] = "Rachel Dawes"
+new_character["movie_id"] = batmanbegins["id"]
+new_character["actor_id"] = holmes["id"]
+new_character.save
 
-new_character5 = Character.new
-new_character5["character_name"] = "Commissioner Gordon"
-new_character5["movie_id"] = batmanbegins["id"]
-new_character5["actor_id"] = oldman["id"]
-new_character5.save
+new_character = Character.new
+new_character["character_name"] = "Commissioner Gordon"
+new_character["movie_id"] = batmanbegins["id"]
+new_character["actor_id"] = oldman["id"]
+new_character.save
 
-new_character6 = Character.new
-new_character6["character_name"] = "Bruce Wayne"
-new_character6["movie_id"] = darkknight["id"]
-new_character6["actor_id"] = bale["id"]
-new_character6.save
+new_character = Character.new
+new_character["character_name"] = "Bruce Wayne"
+new_character["movie_id"] = darkknight["id"]
+new_character["actor_id"] = bale["id"]
+new_character.save
 
-new_character7 = Character.new
-new_character7["character_name"] = "Joker"
-new_character7["movie_id"] = darkknight["id"]
-new_character7["actor_id"] = ledger["id"]
-new_character7.save
+new_character = Character.new
+new_character["character_name"] = "Joker"
+new_character["movie_id"] = darkknight["id"]
+new_character["actor_id"] = ledger["id"]
+new_character.save
 
-new_character8 = Character.new
-new_character8["character_name"] = "Harvey Dent"
-new_character8["movie_id"] = darkknight["id"]
-new_character8["actor_id"] = eckhart["id"]
-new_character8.save
+new_character = Character.new
+new_character["character_name"] = "Harvey Dent"
+new_character["movie_id"] = darkknight["id"]
+new_character["actor_id"] = eckhart["id"]
+new_character.save
 
-new_character9 = Character.new
-new_character9["character_name"] = "Alfred"
-new_character9["movie_id"] = darkknight["id"]
-new_character9["actor_id"] = caine["id"]
-new_character9.save
+new_character = Character.new
+new_character["character_name"] = "Alfred"
+new_character["movie_id"] = darkknight["id"]
+new_character["actor_id"] = caine["id"]
+new_character.save
 
-new_character10 = Character.new
-new_character10["character_name"] = "Rachel Dawes"
-new_character10["movie_id"] = darkknight["id"]
-new_character10["actor_id"] = gyllenhaal["id"]
-new_character10.save
+new_character = Character.new
+new_character["character_name"] = "Rachel Dawes"
+new_character["movie_id"] = darkknight["id"]
+new_character["actor_id"] = gyllenhaal["id"]
+new_character.save
 
-new_character11 = Character.new
-new_character11["character_name"] = "Bruce Wayne"
-new_character11["movie_id"] = darkknightrises["id"]
-new_character11["actor_id"] = bale["id"]
-new_character11.save
+new_character = Character.new
+new_character["character_name"] = "Bruce Wayne"
+new_character["movie_id"] = darkknightrises["id"]
+new_character["actor_id"] = bale["id"]
+new_character.save
 
-new_character12 = Character.new
-new_character12["character_name"] = "Commissioner Gordon"
-new_character12["movie_id"] = darkknightrises["id"]
-new_character12["actor_id"] = oldman["id"]
-new_character12.save
+new_character = Character.new
+new_character["character_name"] = "Commissioner Gordon"
+new_character["movie_id"] = darkknightrises["id"]
+new_character["actor_id"] = oldman["id"]
+new_character.save
 
-new_character13 = Character.new
-new_character13["character_name"] = "Bane"
-new_character13["movie_id"] = darkknightrises["id"]
-new_character13["actor_id"] = hardy["id"]
-new_character13.save
+new_character = Character.new
+new_character["character_name"] = "Bane"
+new_character["movie_id"] = darkknightrises["id"]
+new_character["actor_id"] = hardy["id"]
+new_character.save
 
-new_character14 = Character.new
-new_character14["character_name"] = "John Blake"
-new_character14["movie_id"] = darkknightrises["id"]
-new_character14["actor_id"] = gordonlevitt["id"]
-new_character14.save
+new_character = Character.new
+new_character["character_name"] = "John Blake"
+new_character["movie_id"] = darkknightrises["id"]
+new_character["actor_id"] = gordonlevitt["id"]
+new_character.save
 
-new_character15 = Character.new
-new_character15["character_name"] = "Selina Kyle"
-new_character15["movie_id"] = darkknightrises["id"]
-new_character15["actor_id"] = hathaway["id"]
-new_character15.save
-
-
-
+new_character = Character.new
+new_character["character_name"] = "Selina Kyle"
+new_character["movie_id"] = darkknightrises["id"]
+new_character["actor_id"] = hathaway["id"]
+new_character.save
 
 # Prints a header for the movies output
 puts "Movies"
@@ -282,6 +279,18 @@ puts ""
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
 
+movies = Movie.all
+
+for new_movie in movies
+    # read each movie row's columns
+    movie_title = new_movie["movie_title"]
+    year_released = new_movie["year_released"]
+    mpaarating = new_movie["MPAA_rating"]
+    studio_name = new_movie["studio_id"]
+    # display
+    puts "#{movie_title} #{year_released} #{mpaarating} #{studio_name}"
+  end
+
 # Prints a header for the cast output
 puts ""
 puts "Top Cast"
@@ -290,3 +299,14 @@ puts ""
 
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
+
+characters = Character.all
+
+for new_character in characters
+    # read each movie row's columns
+    movie_name = new_character["movie_id"]
+    actor_name = new_character["actor_id"]
+    character_name = new_character["character_name"]
+    # display
+    puts "#{movie_name} #{actor_name} #{character_name}"
+  end
