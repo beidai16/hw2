@@ -165,7 +165,111 @@ new_actor11.save
 
 #Insert Character data
 
+bale = Actor.find_by({"actor_name" => "Christian Bale"})
+caine = Actor.find_by({"actor_name" => "Michael Caine"})
+neeson = Actor.find_by({"actor_name" => "Liam Neeson"})
+holmes = Actor.find_by({"actor_name" => "Katie Holmes"})
+ledger = Actor.find_by({"actor_name" => "Heath Ledger"})
+eckhart = Actor.find_by({"actor_name" => "Aaron Eckhart"})
+gyllenhaal = Actor.find_by({"actor_name" => "Maggie Gyllenhaal"})
+oldman = Actor.find_by({"actor_name" => "Gary Oldman"})
+hardy = Actor.find_by({"actor_name" => "Tom Hardy"})
+gordonlevitt = Actor.find_by({"actor_name" => "Joseph Gordon-Levitt"})
+hathaway = Actor.find_by({"actor_name" => "Anne Hathaway"})
 
+batmanbegins = Movie.find_by({"movie_title" => "Batman Begins"})
+darkknight = Movie.find_by({"movie_title" => "The Dark Knight"})
+darkknightrises = Movie.find_by({"movie_title" => "The Dark Knight Rises"})
+
+new_character = Character.new
+new_character["character_name"] = "Bruce Wayne"
+new_character["movie_id"] = batmanbegins["id"]
+new_character["actor_id"] = bale["id"]
+new_character.save
+
+new_character2 = Character.new
+new_character2["character_name"] = "Alfred"
+new_character2["movie_id"] = batmanbegins["id"]
+new_character2["actor_id"] = caine["id"]
+new_character2.save
+
+new_character3 = Character.new
+new_character3["character_name"] = "Ra's Al Ghul"
+new_character3["movie_id"] = batmanbegins["id"]
+new_character3["actor_id"] = neeson["id"]
+new_character3.save
+
+new_character4 = Character.new
+new_character4["character_name"] = "Rachel Dawes"
+new_character4["movie_id"] = batmanbegins["id"]
+new_character4["actor_id"] = holmes["id"]
+new_character4.save
+
+new_character5 = Character.new
+new_character5["character_name"] = "Commissioner Gordon"
+new_character5["movie_id"] = batmanbegins["id"]
+new_character5["actor_id"] = oldman["id"]
+new_character5.save
+
+new_character6 = Character.new
+new_character6["character_name"] = "Bruce Wayne"
+new_character6["movie_id"] = darkknight["id"]
+new_character6["actor_id"] = bale["id"]
+new_character6.save
+
+new_character7 = Character.new
+new_character7["character_name"] = "Joker"
+new_character7["movie_id"] = darkknight["id"]
+new_character7["actor_id"] = ledger["id"]
+new_character7.save
+
+new_character8 = Character.new
+new_character8["character_name"] = "Harvey Dent"
+new_character8["movie_id"] = darkknight["id"]
+new_character8["actor_id"] = eckhart["id"]
+new_character8.save
+
+new_character9 = Character.new
+new_character9["character_name"] = "Alfred"
+new_character9["movie_id"] = darkknight["id"]
+new_character9["actor_id"] = caine["id"]
+new_character9.save
+
+new_character10 = Character.new
+new_character10["character_name"] = "Rachel Dawes"
+new_character10["movie_id"] = darkknight["id"]
+new_character10["actor_id"] = gyllenhaal["id"]
+new_character10.save
+
+new_character11 = Character.new
+new_character11["character_name"] = "Bruce Wayne"
+new_character11["movie_id"] = darkknightrises["id"]
+new_character11["actor_id"] = bale["id"]
+new_character11.save
+
+new_character12 = Character.new
+new_character12["character_name"] = "Commissioner Gordon"
+new_character12["movie_id"] = darkknightrises["id"]
+new_character12["actor_id"] = oldman["id"]
+new_character12.save
+
+new_character13 = Character.new
+new_character13["character_name"] = "Bane"
+new_character13["movie_id"] = darkknightrises["id"]
+new_character13["actor_id"] = hardy["id"]
+new_character13.save
+
+new_character14 = Character.new
+new_character14["character_name"] = "John Blake"
+new_character14["movie_id"] = darkknightrises["id"]
+new_character14["actor_id"] = gordonlevitt["id"]
+new_character14.save
+
+new_character15 = Character.new
+new_character15["character_name"] = "Selina Kyle"
+new_character15["movie_id"] = darkknightrises["id"]
+new_character15["actor_id"] = hathaway["id"]
+new_character15.save
 
 
 
