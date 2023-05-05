@@ -80,14 +80,95 @@ Character.destroy_all
 # Generate models and tables, according to the domain model.
 # TODO!
 
-rails generate model Studio
-rails generate model Movie
-rails generate model Actor
-rails generate model Character
+#rails generate model Studio
+#rails generate model Movie
+#rails generate model Actor
+#rails generate model Character
 
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
 # TODO!
+
+#Insert Studio data
+new_studio = Studio.new
+new_studio["studio_name"] = "Warner Bros."
+new_studio.save
+
+#Insert Movie data
+warnerbros = Studio.find_by({"studio_name" => "Warner Bros."})
+
+new_movie = Movie.new
+new_movie["studio_id"] = warnerbros["id"]
+new_movie["movie_title"] = "Batman Begins"
+new_movie["year_released"] = 2005
+new_movie["MPAA_rating"] = "PG-13"
+new_movie.save
+
+new_movie2 = Movie.new
+new_movie2["studio_id"] = warnerbros["id"]
+new_movie2["movie_title"] = "The Dark Knight"
+new_movie2["year_released"] = 2008
+new_movie2["MPAA_rating"] = "PG-13"
+new_movie2.save
+
+new_movie3 = Movie.new
+new_movie3["studio_id"] = warnerbros["id"]
+new_movie3["movie_title"] = "The Dark Knight Rises"
+new_movie3["year_released"] = 2012
+new_movie3["MPAA_rating"] = "PG-13"
+new_movie3.save
+
+#Insert Actor data
+new_actor = Actor.new
+new_actor["actor_name"] = "Christian Bale"
+new_actor.save
+
+new_actor2 = Actor.new
+new_actor2["actor_name"] = "Michael Caine"
+new_actor2.save
+
+new_actor3 = Actor.new
+new_actor3["actor_name"] = "Liam Neeson"
+new_actor3.save
+
+new_actor4 = Actor.new
+new_actor4["actor_name"] = "Katie Holmes"
+new_actor4.save
+
+new_actor5 = Actor.new
+new_actor5["actor_name"] = "Heath Ledger"
+new_actor5.save
+
+new_actor6 = Actor.new
+new_actor6["actor_name"] = "Aaron Eckhart"
+new_actor6.save
+
+new_actor7 = Actor.new
+new_actor7["actor_name"] = "Maggie Gyllenhaal"
+new_actor7.save
+
+new_actor8 = Actor.new
+new_actor8["actor_name"] = "Gary Oldman"
+new_actor8.save
+
+new_actor9 = Actor.new
+new_actor9["actor_name"] = "Tom Hardy"
+new_actor9.save
+
+new_actor10 = Actor.new
+new_actor10["actor_name"] = "Joseph Gordon-Levitt"
+new_actor10.save
+
+new_actor11 = Actor.new
+new_actor11["actor_name"] = "Anne Hathaway"
+new_actor11.save
+
+#Insert Character data
+
+
+
+
+
 
 # Prints a header for the movies output
 puts "Movies"
