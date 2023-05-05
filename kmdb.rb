@@ -288,9 +288,12 @@ for new_movie in movies
     mpaarating = new_movie["MPAA_rating"]
     studio_id = new_movie["studio_id"]
 
+    studio = Studio.find_by({"id" => studio_id}) #find the right "studio entry"
+    studio_name = studio["studio_name"] #print the "name" part of the "studio entry"
+
     # fetch the studio using studio_id
-    studio = Studio.find(studio_id)
-    studio_name = studio["studio_name"]
+    #studio = Studio.find(studio_id)
+    #studio_name = studio["studio_name"]
 
     # display
     puts "#{movie_title} #{year_released} #{mpaarating} #{studio_name}"
