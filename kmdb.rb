@@ -286,7 +286,12 @@ for new_movie in movies
     movie_title = new_movie["movie_title"]
     year_released = new_movie["year_released"]
     mpaarating = new_movie["MPAA_rating"]
-    studio_name = new_movie["studio_id"]
+    studio_id = new_movie["studio_id"]
+
+    # fetch the studio using studio_id
+    studio = Studio.find(studio_id)
+    studio_name = studio["studio_name"]
+
     # display
     puts "#{movie_title} #{year_released} #{mpaarating} #{studio_name}"
   end
@@ -304,9 +309,15 @@ characters = Character.all
 
 for new_character in characters
     # read each movie row's columns
-    movie_name = new_character["movie_id"]
-    actor_name = new_character["actor_id"]
+    movie_id = new_character["movie_id"]
+    actor_id = new_character["actor_id"]
     character_name = new_character["character_name"]
+
+    movie = Movie.find(movie_id)
+    movie_title = movie["movie_title"]
+    actor = Actor.find(actor_id)
+    actor_name = actor["actor_name"]
+
     # display
-    puts "#{movie_name} #{actor_name} #{character_name}"
+    puts "#{movie_title} #{actor_name} #{character_name}"
   end
